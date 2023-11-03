@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class VuChristinaSort implements Sorter {
     
-    private static final int MIN_MERGE = 32;
+    public static final int MIN_MERGE = 32;
     
     @Override
     public <T> void sort(T[] values, Comparator<? super T> order) {
@@ -48,7 +48,7 @@ public class VuChristinaSort implements Sorter {
         }
     }
     
-    private <T> void merge(T[] values, Comparator<? super T> order, int left, int mid, int right) {
+    public <T> void merge(T[] values, Comparator<? super T> order, int left, int mid, int right) {
         int len1 = mid - left;
         int len2 = right - mid;
         
@@ -74,7 +74,7 @@ public class VuChristinaSort implements Sorter {
         }
     }
     
-    private int minRunLength(int n) {
+    public int minRunLength(int n) {
         int r = 0;
         while (n >= MIN_MERGE) {
             r |= (n & 1);
