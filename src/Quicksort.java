@@ -38,7 +38,7 @@ public class Quicksort implements Sorter {
     quickSort(values, 0, values.length - 1, order);
 }
 
-private <T> void quickSort(T[] values, int low, int high, Comparator<? super T> order) {
+public <T> void quickSort(T[] values, int low, int high, Comparator<? super T> order) {
     if (low < high) {
         // Partition the array, values[p..q-1] <= pivot and values[q+1..r] >= pivot
         int partitionIndex = partition(values, low, high, order);
@@ -49,7 +49,7 @@ private <T> void quickSort(T[] values, int low, int high, Comparator<? super T> 
     }
 }
 
-private <T> int partition(T[] values, int low, int high, Comparator<? super T> order) {
+public <T> int partition(T[] values, int low, int high, Comparator<? super T> order) {
     T pivot = values[high];
     int i = low - 1;
 
