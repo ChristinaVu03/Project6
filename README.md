@@ -1,2 +1,4 @@
 # sorting-mini-project
-As the name suggests, it's our mini-project for the sorting lab.
+## Author: Christina Vu
+## Purpose: This project has the implemnentations of the Merge Sort, Quick Sort, Insertion Sort, a sort algorithm based on TimSort, and a test file that tests the algorithms. 
+### Work Cited: ChatGPT
