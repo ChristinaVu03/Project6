@@ -39,7 +39,7 @@ public class MergeSort implements Sorter {
         mergeSort(values, order);
     }
 
-    private <T> void mergeSort(T[] values, Comparator<? super T> order) {
+    public <T> void mergeSort(T[] values, Comparator<? super T> order) {
         int n = values.length;
 
         if (n > 1) {
@@ -58,7 +58,7 @@ public class MergeSort implements Sorter {
         }
     }
 
-    private <T> void merge(T[] values, T[] left, T[] right, Comparator<? super T> order) {
+    public <T> void merge(T[] values, T[] left, T[] right, Comparator<? super T> order) {
         int i = 0, j = 0, k = 0;
 
         while (i < left.length && j < right.length) {
