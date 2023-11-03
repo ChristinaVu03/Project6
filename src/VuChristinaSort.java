@@ -34,7 +34,7 @@ public class VuChristinaSort implements Sorter {
         }
     }
     
-    private <T> void insertionSort(T[] values, Comparator<? super T> order, int left, int right) {
+    public <T> void insertionSort(T[] values, Comparator<? super T> order, int left, int right) {
         for (int i = left + 1; i < right; i++) {
             T key = values[i];
             int j = i - 1;
